@@ -1,0 +1,131 @@
+/* @import "tailwindcss" */
+
+* {
+  box-sizing: border-box;
+  font-family: Vazir;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffe5d0, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  width: 500px;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 250px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+input[type="tel"]:hover {
+  background-color: #ffe5d0;
+  border: 1px solid #ffe5d0;
+}
+
+input[type="tel"]:focus {
+  background-color: #ffe5d0;
+  border: 1px solid #ffe5d0;
+}
+
+input[type="tel"] {
+  transition: .3s;
+  color: #674127;
+  color: #333;
+  outline: 0;
+  border: 1px solid #f97316;
+}
+
+input[type="tel"] {
+
+  color: #f97316;
+}
+
+.btn {
+  width: 100%;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #fb923c;
+}
+
+.otp-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.otp-box input {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.back-arrow {
+  font-size: 20px;
+  color: #999;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.wrong-number {
+  direction: rtl;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #7a7a7a;
+}

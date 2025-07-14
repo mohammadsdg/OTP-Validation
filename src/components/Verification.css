@@ -1,0 +1,103 @@
+.card.verify {
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 500px;
+    position: relative;
+}
+
+.back-arrow {
+    font-size: 20px;
+    color: #999;
+    margin-bottom: 20px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    direction: rtl;
+}
+
+.subtitle {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    direction: rtl;
+}
+
+.otp-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.otp-box input {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.otp-box input:focus {
+    border-color: #f97316;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+}
+
+.otp-box input.jump {
+    animation: jump 0.25s ease;
+}
+
+@keyframes jump {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.2);
+    }
+
+    60% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    width: 100%;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #fb923c;
+}
+
+.wrong-number {
+    direction: rtl;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #7a7a7a;
+    text-align: center;
+}
